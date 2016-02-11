@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tasks distribution box</title>
+
+    <style>
+        * { box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body { margin: 0 }
+       
+        aside {
+            width: 300px;
+            height: 705px;
+            margin-right: 5px;
+            background: #abd2fc;
+            float: left;
+            position: relative;
+        }
+        aside h1 {
+            padding: 15px 15px 5px 15px;
+            margin-bottom: 0px; 
+            margin-top: 0;
+        }
+        aside p {
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        aside footer {
+            position: absolute;
+            bottom: 0;
+            float: left
+        }
+
+        aside footer a {
+            color: #000000;
+            text-decoration: none;
+        }
+        aside footer a:hover {
+            text-decoration: underline;
+        }
+
+       
+
+         main { 
+            width: 710px;
+            height: 710px;
+            margin: 20px auto 0 auto;
+            /background: #808080;
+        }
+        textarea {
+            background: #ffd800;
+            width: 350px;
+            height: 350px;
+            margin: 0 5px 5px 0;
+            padding: 10px;
+            color: #000;
+            display: block;
+            max-width: 705px;
+            max-height: 705px;
+            border: 0px;
+            font-size: 14px; 
+            outline: none;
+            /border-right: 2px solid #ffffff;
+        } 
+
+        textarea:focus { 
+        }
+
+        textarea:hover {
+        }
+
+        #A { background: #fe9595; float: left; }
+        #B { background: #ffa252; float: right; }
+        #C { background: #fbe255; float: left; }
+        #D { background: #7ef34c; float: right; margin-bottom: 50px;}
+       
+        aside span {
+            background: #ffd800;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 4px 2px 0 0;
+            margin-right: 5px;
+        }
+
+        aside .a { background: #fe9595; }
+        aside .b { background: #ffa252; }
+        aside .c { background: #fbe255; padding-right: 0;}
+        aside .d { background: #7ef34c; padding-right: 0;}
+
+    </style>
+
+</head>
+<body>
+    <aside>
+        <h1>Tasks distribution box</h1>
+        <p>This is the simple page that may help you to organize your tasks. The box on the right divided into four subboxes due to different types of tasks: </p>
+        <p><span class="a">A</span> important and immediate</p>
+        <p><span class="b">B</span> important but not immediate</p>
+        <p><span class="c">C</span> not important, but immediate </p>
+        <p><span class="d">D</span> not important and not immediate</p>
+        <p>Start by adding all the task to the A box. Then anylize those tasks and move particular task one by one to the most appropriate subbox. Hence you get to know what tasks to do first. </p>
+        <p>When you are done, don't forget to preserve your tasks distribution to your favorite notebook. </p>
+
+        <br />
+        <footer>
+            <p><a href="serkalayder.github.io">Sergii Kalayda</a> @ 2016</p>
+        </footer>
+    </aside>
+    <main>
+        <div>
+            <textarea id="A"></textarea>
+            <textarea id="B"></textarea>
+        </div>
+        <div>
+            <textarea id="C"></textarea>
+            <textarea id="D"></textarea>
+        </div>
+    </main>
+</body>
+</html>
